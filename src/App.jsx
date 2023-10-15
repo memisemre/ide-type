@@ -1,11 +1,14 @@
 import React from "react";
-import { BiSolidKeyboard } from "react-icons/bi";
+import HTML from "./Words/html.json";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-sky-400">Ide Type</h1>
-      <BiSolidKeyboard className="text-red-300" />
-    </div>
+    <main>
+      {HTML.words.map((word, index) => (
+        <p key={index}>{word}</p>
+      ))}
+    </main>
   );
 };
+
 export default App;
