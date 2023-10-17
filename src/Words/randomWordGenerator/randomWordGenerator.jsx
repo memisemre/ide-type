@@ -1,13 +1,16 @@
-import React from "react";
-const RandomWordGenerator = () => {
+export const randomWordGenerator = (repeatCount) => {
   const CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-  let result = "";
+  const wordLength = 5;
+  const result = [];
 
-  for (let i = 0; i < 6; i++) {
-    const randomIndex = Math.floor(Math.random() * CHARACTERS.length);
-    result += CHARACTERS.charAt(randomIndex);
+  for (let j = 0; j < repeatCount; j++) {
+    let word = "";
+    for (let i = 0; i < wordLength; i++) {
+      const randomIndex = Math.floor(Math.random() * CHARACTERS.length);
+      word += CHARACTERS.charAt(randomIndex);
+    }
+    result.push(word);
   }
-  return <p>{result}</p>;
-};
 
-export default RandomWordGenerator;
+  return result;
+};

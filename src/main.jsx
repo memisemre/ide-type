@@ -6,6 +6,8 @@ import { store } from "./store/index.js";
 import { Provider } from "react-redux";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <App />
+    <main>
+      <App />
+    </main>
   </Provider>
 );
