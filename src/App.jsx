@@ -1,12 +1,9 @@
 import React from "react";
-import HTML from "./Words/html.json";
-
+import RandomWordGenerator from "./Words/randomWordGenerator/randomWordGenerator";
 const App = () => {
   return (
     <main>
-      {HTML.words.map((word, index) => (
-        <p key={index}>{word}</p>
-      ))}
+      <h1>Ide Type</h1>
     </main>
   );
 };
