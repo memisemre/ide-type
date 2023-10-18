@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { randomWordGenerator } from "./Words/randomWordGenerator/randomWordGenerator";
+import { randomWordGenerator } from "./randomWordGenerator/randomWordGenerator";
 
 const App = () => {
   const [wordCount, setWordCount] = useState(0);
