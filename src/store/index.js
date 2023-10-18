@@ -1,5 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-
-export const store = configureStore({
-  reducer: {},
+import formTypes from "./formTypes/index.js";
+export const stores = configureStore({
+  reducer: {
+    formTypes: formTypes,
+  },
 });
