@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: "randomWords",
+  value: "english",
 };
 
 export const formTypes = createSlice({
@@ -9,7 +9,7 @@ export const formTypes = createSlice({
   initialState,
   reducers: {
     changeType: (state) => {
-      state.value = "osman";
+      state.value = state.value;
     },
   },
 });
